@@ -1,0 +1,46 @@
+/* write my cs */
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    background: linear-gradient(blue, rgb(47, 2, 47));
+}
+
+p {
+    color: rgb(92, 27, 27);
+}
+
+body {
+    margin: 0;
+}
+
+aside {
+    flex: 1;
+    background-color: lightblue;
+    padding: 30px;
+}
+
+main  {
+    display: inline-flex;
+}
+
+
+
+.topresults, .bottomresults {
+    flex: 4;
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-width: 1px;
+    border-radius: 10px;
+    flex: 0 0 400px;
+    padding: 100px;
+}
+
+
+@media screen and (max-width: 590px) {
+    
+}
