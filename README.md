@@ -13,7 +13,7 @@ Weather dashboard to look up the current and future conditions for a city and th
 The UV Index shows a color to show conditions as favorable, moderate, or severe. Future weather conditions for the city can be viewed and shows as a 5-day forecast showing the date, an icon of the condition for the wather, the temperature, the wind speed and the humidity. A city can be clicked on in the search history and then shows current and future conditions for the city.
  
 Assignment Example Picture:
-    ![Api Weather before click](./assets/images/website1.jpgwebsite2.jpg)
+    ![Api Weather before click](./assets/images/website1.jpg)
 
 Assignment Example Picture:
     ![Api Weather after click](./assets/images/website2.jpg)
