@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+header, footer, .nav {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    background-color: #d8a47f;
+    width: 100%;
+    text-shadow: black;
+    font-size: 30px;
+    border-style: dotted;
+}
+
+h1 {
+    text-align: center;
+    background: linear-gradient(purple, rgb(47, 2, 47));
+    color: bisque;;
+    padding: 40px;
+}
+
+
+.searchcities {
+    flex: 5;
+    justify-content: left;
+    background-color: skyblue;
+    padding: 20px;
+    border-style: dotted;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+section, ul {
+    display: inline-flex;
+    color: rgb(92, 27, 27);
+    border-style: dotted;
+    margin-top: 1;
+}
+
+.topresults, .bottomresults, .weatherresults, .forecastresults {
+    background-color: pink;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: 400;
+    font-size: larger;
+    border-style: dotted;
+}
+
+@media screen and (max-width: 590px) {
+    
+}
+
+.apiresponse {
+    color: white;
+    background-color: mediumblue;
+}

@@ -5,59 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>ServerAPI Weather Dashboard</title>
-    <link rel="stylesheet" href="Assets/CSS/style.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  <!-- <style sheets> -->
   </head>
-
+  <header>
+    <h1>Weather Dashboard</h1>
+    <nav>
+    </nav>
+  </header>
   <body>
-    <header>
-      <h1>Weather Dashboard</h1>
-    </header>
-    <main>
-    <aside>
-      <section>Search for a city</section>
-      <input type="text">
-      <div class="savecity"></div>
-    </aside>
-    <section><div class="topresults">
+    <div class="searchcities">
+      <h1 id="cities">Search for a city</h1>
+      <tr>      
+      <form id="cityname"><input type="text" class="form-input" name="city-input" placeholder="detroit">
+      <!-- <ul id="schcity" class="searchcity"></ul> -->
+      <button id="scity">Search City</button>
+      <span class="taskslot" id="savelist">
+      <!-- <ul id="svcity" class="savecity"></ul>       -->
+      <span id="city-list"><button id="savecityb">Save City</button></span>
+      <span id = "savedcity" class="addcity"></span>
+      <!-- <span class = "sslot"></span> -->
+        <!-- <button id="add-btn9"></button> -->
+      <!-- <p class="saveslot"></p> -->
+      </span></form>
+      </tr>
+      <!-- example from my 5 -->
+     </div>
+    <div class="topresults">
     <div class="wresults">
-    <div class="weatherresults"> Weather results
-        <!-- 
-        <p class="temp">Temp</p>
-        <p class="wind">Wind</p>
-        <p class="humidity">Humidity</p>
-        <p class="UVindex">UV Index:</p>
-       -->
+    <h1 id = "weatherresults">Current Weather</h1>
+    <section>
+        <ul class="temp">Temp: <span id = "mytempreturned" class="apiresponse"></span> F</ul>
+        <ul class="wind">Wind: <span id = "mywindreturned" class="apiresponse"></span> MPH</ul>
+        <ul class="humidity">Humidity: <span id = "myhumidityreturned" class="apiresponse"></span> %</ul>
+        <!-- got to use id for uvi will call it day 1 also -->
+        <ul class="uvindex">UV Index: <span id = "myuvindexreturned" class="apiresponse"></span> </ul>
+    </section>
+    </div>
+    </div>
     </section>
     </div>
     </div>
     </div>
-    <section><div class="bottomresults">
+    <section>
+    <div class="bottomresults">
     <div class="fresults">
-    <div class="forecastresults">5-day results
-      <!-- <section class="day1"> -->
-        <!-- icon, temp, wind, humidity -->
-      <!-- </section> -->
-      <!-- <section class="day2"> -->
-        <!-- icon, temp, wind, humidity -->
-      <!-- </section> -->
-      <!-- <section class="day3"> -->
-        <!-- icon, temp, wind, humidity -->
-      <!-- </section> -->
-      <!-- <section class="day4"> -->
-        <!-- icon, temp, wind, humidity -->
-      <!-- </section> -->
-      <!-- <section class="day5"> -->
-        <!-- icon, temp, wind, humidity -->
+    <h1 id="forecastresults">5-day Weather Outlook<h1>
+      </div>
+      <section class="day1">Day1
+      <ul class="day1icon">icon: <span id = "myday1iconreturned" class="apiresponse"></span> </ul> 
+      <ul class="day1temp">temp: <span id = "myday1tempreturned" class="apiresponse"></span> F</ul>
+      <ul class="day1wind">wind: <span id = "myday1windreturned" class="apiresponse"></span> MPH</ul>
+      <ul class="day1humidity">humidity: <span id = "myday1humidityreturned" class="apiresponse"></span> %</ul>
+      <section>
+      <section class="day2">Day2
+      <ul class="day2icon">icon: <span id = "myday2iconreturned" class="apiresponse"></span> </ul>
+      <ul class="day2temp">temp: <span id = "myday2tempreturned" class="apiresponse"></span> F</ul>
+      <ul class="day2wind">wind: <span id = "myday2windreturned" class="apiresponse"></span> MPH</ul>
+      <ul class="day2humidity">humidity: <span id = "myday2humidityreturned" class="apiresponse"></span> %</ul>
+      <section>
+      <section class="day3">Day3
+      <ul class="day3icon">icon: <span id = "myday3iconreturned" class="apiresponse"></span></ul>
+      <ul class="day3temp">temp: <span id = "myday3tempreturned" class="apiresponse"></span> F</ul>
+      <ul class="day3wind">wind: <span id = "myday3windreturned" class="apiresponse"></span> MPH</ul>
+      <ul class="day3humidity">humidity: <span id = "myday3humidityreturned" class="apiresponse"></span> %</ul>
+      <section>
+      <section class="day4">Day4
+      <ul class="day4icon">icon: <span id = "myday4iconreturned" class="apiresponse"></span></ul>
+      <ul class="day4temp">temp: <span id = "myday4tempreturned" class="apiresponse"></span> F</ul>
+      <ul class="day4wind">wind: <span id = "myday4windreturned" class="apiresponse"></span> MPH</ul>
+      <ul class="day4humidity">humidity: <span id = "myday4humidityreturned" class="apiresponse"></span> %</ul>
+      <section>
+      <section class="day5">Day5
+      <ul class="day5icon">icon: <span id = "myday5iconreturned" class="apiresponse"></span></ul>
+      <ul class="day5temp">temp: <span id = "myday5tempreturned" class="apiresponse"></span> F</ul>
+      <ul class="day5wind">wind: <span id = "myday5windreturned" class="apiresponse"></span> MPH</ul>
+      <ul class="day5humidity">humidity: <span id = "myday5humidityreturned" class="apiresponse"></span> %</ul>
+      <section>
       </div>
       </div>
       </div>
-      </section>
-  </main>
-
-    <script src="Assets\JS\script.js"></script>
+      <!-- <div class="m-5" id="root"></div> -->
+      </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets\js\script.js"></script>
   </body>
-
   <footer>
-
+    <p>Navigate back to search, weather or 5-day outlook</p>
+    <a href="#searchcities">Search</a>
+    <a href="#weatherresults">Weather</a>
+    <a href="#forecastresults">5-day</a>
   </footer>
 </html>
